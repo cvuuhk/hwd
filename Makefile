@@ -2,7 +2,8 @@ all:
 	g++ -o hwd ./src/main.cpp
 
 install: all
-	cp hwd /usr/bin/hwd
+	cp -f hwd ${DESTDIR}/bin
+
 .PHONY: clean
 clean:
 	rm hwd
